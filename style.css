@@ -96,11 +96,7 @@
   .recipe-card {
     background-color: var(--color-white);
   }
-
-  .recipe-card__preparation {
-    border-radius: calc(var(--radius) / 2);
-  }
-
+  
   .recipe-card__preparation,
   .recipe-card__ingredients {
     ul {
@@ -117,6 +113,7 @@
   }
 
   .recipe-card__preparation {
+    border-radius: calc(var(--radius) / 2);
     background-color: var(--color-rose-50);
     padding-block: var(--gap-md);
     padding-inline: 1.7rem;
@@ -157,6 +154,8 @@
   }
 
   .recipe-card__nutrition-table {
+    width: 100%;
+
     td {
       padding-block: 1rem;
       border-bottom: 1px solid;
@@ -170,7 +169,6 @@
       &:not(.strong) {
         color: var(--color-stone-600);
         padding-inline: 1.8rem;
-        /* padding-inline: .75rem; */
       }
     }
 
