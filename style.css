@@ -16,7 +16,7 @@
   --gap-sm: calc(var(--gap) / 2);
   --gap-md: 1.8rem;
   --gap: 2.75rem;
-  --gap-xl: calc(var(--gap) * 2);
+  --gap-xl: calc(var(--gap) * 2.5);
 
   --ff-primary: 'Outfit', sans-serif;
   --ff-secondary: 'Young Serif', Arial, Helvetica, serif;
@@ -54,6 +54,7 @@
     font-family: var(--ff-primary);
     font-weight: 400;
     font-style: normal;
+    height: 100vh;
   }
 
   ul, ol {
@@ -157,17 +158,19 @@
 
   .recipe-card__nutrition-table {
     td {
-      padding-inline: .75rem;
-      padding-block-end: 1rem;
+      padding-block: 1rem;
       border-bottom: 1px solid;
       border-color: var(--color-stone-150);
+      width: 50%;
 
       &.strong {
         color: var(--color-brown-800);
       }
 
       &:not(.strong) {
-        padding-inline-start: 1.8rem;
+        color: var(--color-stone-600);
+        padding-inline: 1.8rem;
+        /* padding-inline: .75rem; */
       }
     }
 
